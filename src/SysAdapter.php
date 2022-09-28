@@ -113,6 +113,7 @@ class SysAdapter implements Adapter, LoggerAwareInterface
 	}
 
 	private function callBinary(string $source, array $options): string
+	{
 		$descriptors = [
 			0 => ['pipe', 'r'],
 			1 => ['pipe', 'w']
